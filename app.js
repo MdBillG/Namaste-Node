@@ -14,6 +14,9 @@ const { x, calculateSum } = require('./sum') //desctructue on the fly
 const calculateMultiply = require('./calculate/multiply')
 const { calculateSubstration, calculateDivison } = require('./calculate')
 
+//import json
+const data = require('./data.json')
+
 
 //es modules import 
 // import { calculateSum } from './sum.js' // need to explicitly add .js
@@ -21,6 +24,7 @@ const { calculateSubstration, calculateDivison } = require('./calculate')
 var name = 'namste node js'
 
 console.log('name: ', name)
+
 // console.log("gloval: ", global)// global global object of node js objectclg
 // console.log("this", this)// gives us the empty object 
 let a = 10
@@ -37,13 +41,5 @@ calculateMultiply(a, c)
 calculateSubstration(a, c)
 calculateDivison(a, c)
 
-// if (a > c) {
-//     console.log("loopS", global.loopStart)
-//     return a
-// }
-// else {
-//     console.log("loopExit", global.loopExit)
 
-//     return c
-
-// }
+console.log("datafromjson: " + JSON.stringify(data))
