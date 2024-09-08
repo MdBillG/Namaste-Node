@@ -37,9 +37,9 @@ let c = 9
 //just like this
 
 calculateSum(a, c)
-calculateMultiply(a, c)
+const checking = calculateMultiply(a, c)
+console.log("checking", checking)
 calculateSubstration(a, c)
 calculateDivison(a, c)
 
-
-console.log("datafromjson: " + JSON.stringify(data))
+console.log("datafromjson: ", JSON.stringify(data))
